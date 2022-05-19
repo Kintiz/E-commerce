@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -19,6 +19,7 @@
 </head>
 
 <body style="height: 0vh;">
+    <!-- NavBar -->
     <header id="sobreposicao">
         <nav>
             <div class="logo">
@@ -39,15 +40,18 @@
                 </li>
             </ul>
             <div class="carrinho">
-                <h4>Carrinho</h4>
+                <h4>Cart</h4>
             </div>
         </nav>
     </header>
+    
     <main>
+        <!-- Wallpaper -->
         <div id="montanha1"></div>
+        <!-- List -->
         <selection id="lista">
             <div class="conteudo">
-            <h2>Digite um novo produto à lista</h2>
+            <h2>Add a new product to the list</h2>
             <div class="topo">
                 <input type="text" id="input-novo-produto" placeholder="Adicione um novo produto">
                 <button id="btn-add-produto">
@@ -59,7 +63,7 @@
         </div>
         </selection>
         
-
+        <!-- Modal list -->
         <div id="modal-editar">
             <button id="modal-editar-btn-fechar">
                 <i class="fa fa-remove fa-2x"></i>
@@ -68,17 +72,18 @@
             <hr>
             <form>
                 <div class="frm-linha">
-                    <label for="nome">Editar Produto</label>
+                    <label for="nome">Edit Product</label>
                     <input type="text" id="input-produto-nome-editar">
                 </div>
                 <div class="frm-linha">
-                    <button id="btn-atualizar-produto">Salvar</button>
+                    <button id="btn-atualizar-produto">Save</button>
                 </div>
             </form>
         </div>
         <div id="modal-editar-fundo"></div>
     </main>
-
+    
+    <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
