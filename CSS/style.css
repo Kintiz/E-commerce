@@ -5,7 +5,7 @@
 }
 body{
     height: 300vh;
-    background-color: #b3afb0;
+    background-color: #c4bebe;
 }
 header{
     width: 100%;
@@ -248,6 +248,12 @@ img{
     border-radius: 20px;
     background-color: #898790;
 }
+#featured .product .card img{
+    width: 99%;
+    margin-top: 1%;
+    border-radius: 20px;
+}
+
 #featured .product .card .card-body{
     text-align: center;
 }

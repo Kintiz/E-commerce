@@ -12,13 +12,13 @@
 }
 .conteudo{
     position: absolute;
-    margin-top: 17%;
-    margin-left: 34%;
+    margin-top: 12%;
+    margin-left: 28%;
     font-size: 1rem;
     width: 100%;
-    max-width: 450px;
+    max-width: 880px;
     padding: 55px;
-    border-radius: 12px;
+    border-radius: 20px;
     background: #2b2a2a;
 }
 .conteudo h2{
@@ -31,7 +31,7 @@
     margin-bottom: 35px;
 }
 .topo input{
-    width: 350px;
+    width: 850px;
     margin-right: 2px;
     padding: 15px;
     border-radius: 12px;
@@ -44,7 +44,7 @@
 .topo button{
     width: 45px;
     border-radius: 12px;
-    border: 1px solid #191818;
+    border: 0px;
     background: #191818;
     color: #FFF;
     outline: none;
@@ -52,6 +52,8 @@
 .topo button:hover{
     background: #1f1e1e;
     cursor: pointer;
+    cursor: pointer;
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
 }
 #lista-produto{
     list-style-type: none;
@@ -80,6 +82,8 @@
 }
 .btn-acao:hover{
     background: #3c3a3a;
+    cursor: pointer;
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
 }
 .texto-produto{
     overflow: hidden;
@@ -135,6 +139,11 @@
     outline: none;
     cursor: pointer;
 }
+#modal-editar-btn-fechar:hover{
+    background: #3c3a3a;
+    cursor: pointer;
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+}
 form{
     width: 100%;
     margin-top: 20px;
@@ -172,4 +181,6 @@ form{
 }
 .frm-linha button:hover{
     background: #3c3a3a;
+    cursor: pointer;
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
 }
