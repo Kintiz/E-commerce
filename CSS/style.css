@@ -14,7 +14,7 @@ header{
     font-family: 'Nunito', sans-serif;
     box-shadow: 0px 3px 0px rgba(255, 255, 255, 0.04);
 }
-#sobreposicao{
+#overlap{
     z-index: 9;
 }
 nav{
@@ -51,7 +51,7 @@ nav{
     color: coral;
     font-weight: bold;
 }
-.carrinho{
+.cart{
     color: rgba(255, 255, 255, 0.877);
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -157,10 +157,10 @@ img{
     font-weight: bold;
     letter-spacing: 4px;
 }
-#montanha {
+#montain {
     background-image: url("../Imagens/alp.jpg");
     width: 100%;
-    height: 140vh;
+    height: 130vh;
     background-size: cover;
     background-position: bottom center;
     display: flex;
@@ -170,7 +170,7 @@ img{
     position: absolute;
     margin-top: 160px;
 }
-#montanha .mountaineering{
+#montain .mountaineering{
     text-align: center;
     font-weight: bold;
     letter-spacing: 4px;
@@ -240,8 +240,8 @@ img{
    }
 /* From uiverse.io by @alexmaracinaru */
 #featured .product .card{
-    width: 20%;
-    margin-top: 28%;
+    width: 10%;
+    margin-top: 35%;
     margin-right: 2%;
     margin-left: 2%;
     align-items: center;
@@ -253,7 +253,6 @@ img{
     margin-top: 1%;
     border-radius: 20px;
 }
-
 #featured .product .card .card-body{
     text-align: center;
 }
@@ -263,10 +262,44 @@ img{
     margin-bottom: 20px;
     margin-top: 20px;
 }
-#paraquedismo {
+#cont {
+    display: grid;
+    place-items:center;
+    margin-top: 50%;
+}
+#cont .containerr img{
+  width: 30%;
+  height: 100%;
+  object-fit:cover;
+  margin-left: 40px;
+  
+  -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+  
+  transform-origin:center;
+  transform:perspective(800px) rotateY(25deg);
+  transition:0.5s;
+}
+#cont .containerr {
+    max-width:600px;
+    max-height:350px;
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    
+  }
+#cont .containerr:hover img {
+    opacity:1;
+  }
+#cont .containerr img:hover {
+    transform:perspective(800px)rotateY(0deg);
+    opacity:1;
+  }
+#sky {
     background-image: url("../Imagens/paraqudismo.jpg");
     width: 100%;
-    height: 120vh;
+    height: 130vh;
     background-size: cover;
     background-position: bottom center;
     display: flex;
@@ -274,14 +307,14 @@ img{
     justify-content: center;
     align-items: flex-start;
     position: absolute;
-    margin-top: 160px;
+    margin-top: 250px;
 }
-#paraquedismo .skydiving{
+#sky .skydiving{
     position: absolute;
     text-align: center;
     font-weight: bold;
     letter-spacing: 4px;
-    margin-bottom: 45%;
+    margin-bottom: 55%;
     margin-left: 45%;
     text-transform: uppercase;
 }

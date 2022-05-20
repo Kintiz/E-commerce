@@ -13,12 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@200&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
-    <!--NavBar-->
-    <header id="sobreposicao">
+
+    <div>
+            <!--NavBar-->
+    <header id="overlap">
         <nav>
             <div class="logo">
                 <h4>The Barra</h4>
@@ -37,20 +40,20 @@
                     <a href="#">Projects</a>
                 </li>
             </ul>
-            <div class="carrinho">
+            <div class="cart">
                 <h4>Cart</h4>
             </div>
         </nav>
     </header>
-    
-    <!--Home page-->
+
     <main>
+        <!--Home page-->
         <selection id="home">
             <div class="container">
                 <h3>
                     Welcome to the <span class="jungle">Jungle</span><br>
                     Now let's live
-                </h3>
+                </h3><!-- tick the 'lets go' button -->
                 <a href="#pointer"><button class="button">
                     Let's Go
                 </button></a>
@@ -65,159 +68,82 @@
                 <p>Here you can check out our new products with fair price on Barra</p>
             </div>
         </div>
+    </div>
+
+
+
+
+
+
+        <!--Tentando resolver esta porra-->
         <!--Featured-->
         <selection id="featured">
             <!--Wallpaper montain-->
-            <div id="montanha">
+            <div id="montain">
                 <div class="mountaineering">
                     <h2>
                         Mountaineering
                     </h2>
                 </div>
             </div>
-            <!--Product-->
-            <div class="product">
-                <div class="card" style="margin-left: -2%;">
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h2 class="card-text">Bonnet</h2>
-                    <h2>$92.00</h2>
-                    <hr>
-                        <!--Button-->
-                    <a href="#"><button class="cta">
-                        <span class="hover-underline-animation"> Shop now </span>
-                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                        </svg>
-                      </button></a>
-                    </div>
-                </div>
-                <!--Product-->
-                <div class="card" >
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-text">Rope</h2>
-                        <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                        <button class="cta">
-                            <span class="hover-underline-animation"> Shop now </span>
-                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                              <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                            </svg>
-                          </button>
-                    </div>
-                </div>
-                <!--Product-->
-                <div class="card" >
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-text">Brake</h2>
-                        <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                        <button class="cta">
-                            <span class="hover-underline-animation"> Shop now </span>
-                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                              <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                            </svg>
-                          </button>
-                    </div>
-                </div>  
-                <!--Product-->
-                <div class="card" style="margin-right: 6%;">
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-text">Helmet</h2>
-                        <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                        <button class="cta">
-                            <span class="hover-underline-animation"> Shop now </span>
-                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                              <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                            </svg>
-                          </button>
-                    </div>
-                </div>
-            </div>
         </selection>
+
+        <div id="cont" style="margin-top: 440px;">
+            <div class="containerr">
+                <img src="https://images.unsplash.com/photo-1569390173732-5c735072c80f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1582842195329-6a0baffd2a39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""><img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""><img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>   
+        </div>
+        <div id="cont" style="margin-top: 200px;">
+            <div class="containerr">
+                <img src="https://images.unsplash.com/photo-1569390173732-5c735072c80f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1582842195329-6a0baffd2a39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""><img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""><img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>   
+        </div>
+
         <selection id="featured">
             <!--Wallpaper Skydiving-->
-            <div id="paraquedismo">
+            <div id="sky">
                 <div class="skydiving">
                     <h2>
                         skydiving
                     </h2>
                 </div>
             </div>
-            <!--Product-->
-            <div class="product">
-                <div class="card" style="margin-left: -2%; background-color: #3d6996;">
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h2 class="card-text">Rope</h2>
-                    <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                    <a href="#"><button class="cta">
-                        <span class="hover-underline-animation"> Shop now </span>
-                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                        </svg>
-                      </button></a>
-                    </div>
-                </div>
-                <!--Product-->
-                <div class="card" style="background-color: #3d6996;">
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-text">Rope</h2>
-                        <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                        <button class="cta">
-                            <span class="hover-underline-animation"> Shop now </span>
-                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                              <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                            </svg>
-                          </button>
-                    </div>
-                </div>
-                <!--Product-->
-                <div class="card"style="background-color: #3d6996;">
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-text">Rope</h2>
-                        <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                        <button class="cta">
-                            <span class="hover-underline-animation"> Shop now </span>
-                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                              <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                            </svg>
-                          </button>
-                    </div>
-                </div>  
-                <!--Product-->
-                <div class="card" style="margin-right: 6%;background-color: #3d6996;">
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-text">Rope</h2>
-                        <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                        <button class="cta">
-                            <span class="hover-underline-animation"> Shop now </span>
-                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                              <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                            </svg>
-                          </button>
-                    </div>
-                </div>
-            </div>
         </selection>
+
+        <div id="cont" style="margin-top: 540px;">
+            <div class="containerr">
+                <img src="https://images.unsplash.com/photo-1569390173732-5c735072c80f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1582842195329-6a0baffd2a39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""><img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""><img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>   
+        </div>
+        <div id="cont" style="margin-top: 200px;">
+            <div class="containerr">
+                <img src="https://images.unsplash.com/photo-1569390173732-5c735072c80f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1582842195329-6a0baffd2a39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                <img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""><img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""><img src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+          </div>   
+        </div>
+
+
+
+
+
+
+
+
     </main>
 
     <!--Script-->
