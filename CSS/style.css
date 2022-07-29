@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Nunito:ital,wght@0,300;1,300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
-    height: 300vh;
-    background-color: #c4bebe;
+    background-color: #78759ac4;
 }
 header{
     width: 100%;
@@ -13,77 +17,78 @@ header{
     backdrop-filter: blur(2px);
     font-family: 'Nunito', sans-serif;
     box-shadow: 0px 3px 0px rgba(255, 255, 255, 0.04);
-}
-#sobreposicao{
-    z-index: 9;
+    z-index: 10;
 }
 nav{
-    margin-top: 8px;
+    padding-top: 18px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    min-height: 8.5vh;
+    align-items: baseline;
 }
-.logo{
+.logo, .cart{
     color: rgba(255, 255, 255, 0.877);
-    text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
-.links{
+.logo a, .cart a{
+    color: rgba(255, 255, 255, 0.877);
+    text-decoration: none;
+}
+nav ul{
     margin-top: 2px;
     display: flex;
     justify-content: space-around;
     width: 30%; 
 }
-.links li{
+nav ul li{
     list-style: none;
 }
-.links a{
+nav ul a{
     color: rgba(255, 255, 255, 0.877);
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
-    font-size: 14px;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
-.links a:hover{
-    color: coral;
+nav ul li a:hover{
+    color: rgba(255, 136, 93, 0.959);
     font-weight: bold;
 }
-.carrinho{
-    color: rgba(255, 255, 255, 0.877);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 20px;
-}
+
+/*v*/
+
 main{
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+    /*font-family: 'Alegreya', serif;*/
+    font-family: 'Ibarra Real Nova', serif;
 }
 img{
     width: 100%;
     height: auto;
 }
 #home{
-    background-image: url("../Imagens/wallpaperbetter.com_1366x768.jpg");
-    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    background-image: url("../Imagens/tter.png");
     height: 120vh;
     background-size: cover;
-    background-position: top center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    text-align: center;
+    font-weight: 500;
+    
+    /*flex-wrap: wrap;*/
 }
-#home .container{
-    font-weight: bold;
+#home .content1{
     color: rgba(255, 255, 255, 0.877);
     letter-spacing: 4px;
-    margin-bottom: 280px;
-}
-#home .container h3{
     position: absolute;
-    font-size: 64px;
+    top: 30%;
+}
+#home .content1 h1{
+    font-size: 54px;
 }
 #home .jungle{
     background-image: url("../Imagens/sad.jpg");
@@ -92,7 +97,7 @@ img{
     color: transparent;
 }
 /* From uiverse.io by @nikk7007 */
-#home .container .button {
+.button {
     --color: rgba(255, 255, 255, 0.877);
     padding: 0.8em 1.7em;
     background-color: transparent;
@@ -101,16 +106,15 @@ img{
     overflow: hidden;
     cursor: pointer;
     transition: .5s;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 17px;
     border: 1px solid;
     font-family: inherit;
     text-transform: uppercase;
     color: var(--color);
     z-index: 1;
-    margin-top: 150px;
    }
-   #home .container .button::before, .button::after {
+.button::before, .button::after {
     content: '';
     display: block;
     width: 50px;
@@ -122,166 +126,581 @@ img{
     background-color: var(--color);
     transition: 1s ease;
    }
-   #home .container .button::before {
+.button::before {
     top: -1em;
     left: -1em;
    }
-   #home .container .button::after {
+.button::after {
     left: calc(100% + 1em);
     top: calc(100% + 1em);
    }
-   #home .container .button:hover::before, .button:hover::after {
+.button:hover::before, .button:hover::after {
     height: 410px;
     width: 410px;
    }
-   #home .container .button:hover {
+.button:hover {
     color: rgb(10, 25, 30);
    }
-   #home .container .button:active {
+.button:active {
     filter: brightness(.8);
    }
 /* From uiverse.io by @nikk7007 */
+
+/*v*/
+
 #pointer{
-    overflow: hidden;
-    color: #a2b38b00;
     display: flex;
-    position: absolute;
-    margin-top: 71.5%;
+    align-items: center;
 }
-#brand .row .simbolos{
-    float: left;
-    width: 20%;
-    height: auto;
-    padding: 0;
-    margin-top: -24px;
-    font-weight: bold;
-    letter-spacing: 4px;
-}
-#montanha {
-    background-image: url("../Imagens/alp.jpg");
-    width: 100%;
-    height: 140vh;
-    background-size: cover;
-    background-position: bottom center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: absolute;
-    margin-top: 160px;
-}
-#montanha .mountaineering{
+.first-text{
+    color: rgba(255, 255, 255, 0.877);
     text-align: center;
-    font-weight: bold;
+    margin-left: 8px;
+    letter-spacing: 2px;
+}
+#pointer img{
+    width: 50%;
+    height: 100%;
+}
+
+/*v*/
+
+.content2{
+    margin-bottom: 100px;
+    overflow-x: hidden;
+}
+.content2-1{
+    overflow-x: hidden;
+    display: flex;
+    position: relative;
+}
+.content2-1 img{
+    margin-right: 100px;
+    width: 25%;
+    height: 100%;
+
+}
+.content2-1 h2{
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.877);
+    text-align: center;
+    margin-top: 200px;
+    margin-right: 25px;
+}
+.background1{
+    transform-origin: bottom left;
+    transform: skew(-28deg);
+    background-color: #78759af1;
+    left: 10%;
+    width: 50%;
+    height: 40em;
+    position: absolute;
+    border-radius: 15%;
+    /* fiquei em duvida
+    clip-path: polygon(100% -155%, 100% 100%, 0% 100%, 10% 100%);
+    background-color: #dfd7d5;
+    width: 90%;
+    left: 10%;
+    height: 600px;
+    position: absolute;
+    */
+}
+.background2{
+    background-color: #78759af1;
+    width: 50%;
+    left: 50%;
+    height: 40em;
+    position: absolute;
+}
+
+/*v*/
+
+.tittle{
+    color: rgba(255, 255, 255, 0.877);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+.tittle h1{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+.tittle h5{
     letter-spacing: 4px;
-    margin-bottom: 55%;
-    margin-left: 44%;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.boxes {
+    display: flex;
+    margin-bottom: 70px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.boxes a{
+    text-decoration: none;
+    flex-basis: 30%;
+}
+.box{
+    color: rgba(255, 255, 255, 0.877);
+    background: rgba(250, 145, 106, 0.705);
+    border-radius: 10px;
+    padding: 20px 12px;
+    text-align: center;
+    box-sizing: border-box;
+    border: solid #dfd7d5 2px;
+    cursor: pointer;  
+    transition: all 0.3s;
+}
+.box h1{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 25px;
     text-transform: uppercase;
 }
-#our .container{
-    margin-top: 80px;
-    margin-bottom: -25px;
+.box h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+.box:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    transition: all 0.5s;
+    transform: scale(1.02);  
+
+}
+
+/*v*/
+
+.background3{
+    background-color: #78759ac4;
+    margin-top: 12em;
+    width: 100%;
+    height: 320px;
+    display:block;
+    margin-bottom: 80px;
+}
+.content3{
+    color: rgba(255, 255, 255, 0.877);
+    padding-top: 70px;
     text-align: center;
     font-size: 30px;
     letter-spacing: 4px;
+    /*flex-wrap: wrap;*/
 }
-#our .container h3{
+.bar{
+    width: 80px;
+    height: 9px;
+    background-color: rgba(250, 145, 106, 0.705);
+    border-radius: 3px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.content3 h1{
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
     margin-top: 20px;
     text-align: center;
     font-size: 40px;
-}
-#featured .product{
-    margin-left: 11%;
-    display: flex;
-}
-/* From uiverse.io by @alexmaracinaru */
-.cta {
-    border: none;
-    background: none;
     margin-bottom: 10px;
-    margin-left: 15px;
-   }   
-   .cta span {
-    padding-bottom: 7px;
-    letter-spacing: 4px;
-    font-size: 18px;
-    text-transform: uppercase;
-   }  
-   .cta svg {
-    transform: translateX(-8px);
-    transition: all 0.3s ease;
-   }
-   .cta:hover svg {
-    transform: translateX(0);
-   }   
-   .cta:active svg {
-    transform: scale(0.9);
-   }   
-   .hover-underline-animation {
-    position: relative;
-    color: black;
-    padding-bottom: 20px;
-   }  
-   .hover-underline-animation:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-   }   
-   .cta:hover .hover-underline-animation:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-   }
-/* From uiverse.io by @alexmaracinaru */
-#featured .product .card{
-    width: 20%;
-    margin-top: 28%;
-    margin-right: 2%;
-    margin-left: 2%;
-    align-items: center;
-    border-radius: 20px;
-    background-color: #898790;
 }
-#featured .product .card img{
-    width: 99%;
-    margin-top: 1%;
-    border-radius: 20px;
+#our .content3 h3{
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 4px;
+
 }
 
-#featured .product .card .card-body{
-    text-align: center;
+/*v*/
+
+.content4{
+    overflow-x: hidden;
+    padding-top: 20px;
 }
-#featured .product .card .card-body hr{
-    width: 100%;
-    margin-right: 188px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+.background4{
+    background-color: rgba(250, 145, 106, 0.705);
+    width: 20em;
+    left: 60%;
+    height: 20em;
+    border-radius: 100%;
+    position: absolute;
+    border: solid #dfd7d5 2px;
 }
-#paraquedismo {
-    background-image: url("../Imagens/paraqudismo.jpg");
-    width: 100%;
-    height: 120vh;
-    background-size: cover;
-    background-position: bottom center;
-    display: flex;
-    flex-direction: column;
+.background5{
+    transform-origin: bottom left;
+    transform: skew(-28deg);
+    background-color: rgba(250, 145, 106, 0.705);
+    width: 500px;
+    right: 70%;
+    margin-top: 200px;
+    height: 500px;
+    border-radius: 20%;
+    position: absolute;
+    border: solid #dfd7d5 2px;
+}
+.background6{
+    background-color: rgba(250, 145, 106, 0.705);
+    width: 200px;
+    left: 20%;
+    margin-top: 900px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    border: solid #dfd7d5 2px;
+}
+.background7{
+    transform-origin: bottom left;
+    transform: skew(28deg);
+    background-color: rgba(250, 145, 106, 0.705);
+    width: 40%;
+    left: 60%;
+    margin-top: 90em;
+    height: 300px;
+    border-radius: 20%;
+    position: absolute;
+    border: solid #dfd7d5 2px;
+}
+.background8{
+    transform-origin: bottom left;
+    transform: skew(-35deg);
+    background-color: rgba(250, 145, 106, 0.705);
+    width: 20%;
+    right: 70%;
+    margin-top: 120em;
+    height: 30em;
+    border-radius: 5%;
+    position: absolute;
+    border: solid #dfd7d5 2px;
+}
+.cards, .cards2, .cards3, .cards4{
+    display:flex;
     justify-content: center;
-    align-items: flex-start;
-    position: absolute;
-    margin-top: 160px;
 }
-#paraquedismo .skydiving{
-    position: absolute;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 4px;
-    margin-bottom: 45%;
-    margin-left: 45%;
+.card{
+    background-color: #78759a;
+    width: 15%;
+    height: 100%;
+    margin: 15px;
+    cursor: pointer;  
+    transition: all 0.3s;
+    border: none;
+    border-radius: 10px;
+    /*border-radius: 2px;
+    border: none;*/
+}
+.card:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    transition: all 0.4s;
+    transform: translateY(-3px); 
+}
+.product{
+    color: rgba(37, 37, 37, 0.842);
+    background-color: #dfd7d5;
+    font-family: 'Nunito', sans-serif;
+}
+.product h3{
+    align-items: baseline;
+    font-weight: 600;
+    justify-content: space-between;
+    display: flex;
+    font-size: 18px;
+    text-align: start;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.product a{
+    color: rgba(37, 37, 37, 0.842);
+    text-decoration: none;
+}
+#heart{
+    margin-right: 8px;
+    padding-top: 5px;
+    transition: all 0.3s;
+    font-size: 20px;
+}
+#heart:hover{
+    margin-right: 8px;
+    padding-top: 5px;
+    transition: all 0.3s;
+    color: #e23a3a;
+}
+.star{
+    display: flex;
+    align-items: center;
+}
+.product .star-icons{
+    margin-left: 4px;
+}
+.product .products-quantify{
+    color: rgba(37, 37, 37, 0.842);
+    margin-left: 5px;
+    text-decoration: none;
+}
+.product-price{
+    display: block;
+    align-items: baseline;
+    font-weight: 600;
+}
+.product-price-past{
+    display: flex;
+}
+.product-price h2{
+    margin-left: 8px;
+}
+.product-price h5{
+    margin-left: 8px;
+    color: rgba(5, 124, 5, 0.952);
+}
+.product-price h5 s{
+    color: gray;
+}
+.button-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*v*/
+
+footer{
+    display: block;
+    margin-top: 10em;
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(26, 25, 25, 0.979);
+    position: relative;
+    z-index: 9;
+}
+.content5{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.877);
+}
+.content5-1, .content5-2, .content5-3, .content5-4{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.content5 a{
+    color: rgba(255, 255, 255, 0.877);
+    text-decoration: none;
+}
+.content5 h1{
     text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+}
+.content5 h2{
+    color: #78759a;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+}
+.content5 h5{
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+.content5 h5:hover{
+    transition: all 0.5s;
+    color: #78759a;
+}
+footer hr{
+    background-color: rgba(255, 255, 255, 0.877);
+    width: 90%;
+    height: 3px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.icons{
+    font-size: 20px;
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    font-size: 30px;
+}
+.icons a{
+    color: rgba(255, 255, 255, 0.877);
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all 0.5s;
+}
+.icons a:hover{
+    transition: all 0.5s;
+    color: #78759a;
+    transform: translateY(2px);
+}
+footer h6{
+    margin-top: -20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.877);
+    
+}
+
+@media screen and (max-width: 768px){
+    
+    nav{
+        padding-top: 18px;
+        padding-bottom: 0px;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 10px;
+    }
+    .content2{background-color: #78759a;}
+    .content2-1 img{
+        padding-bottom: 10px;
+        width: 35%;
+    }
+    .content2-1 h2{margin-top: 25%;}
+    .background1{display: none;}
+    .background2{display: none;}
+    .box h1{font-size: 23px;}
+    .box h3{
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
+    .background4{
+        width: 200px;
+        height: 200px;
+    }
+    .background6{
+        width: 200px;
+        margin-top: 65em;
+        height: 200px;
+    }
+    .background9{
+        width: 10em;
+        margin-top: 150em;
+        height: 10em;
+    }
+    .product h3{
+        justify-content: center;
+        font-size: 17px;
+        margin-left: 0px;
+    }
+    #heart{display: none;}
+    .product .star-icons{margin-left: 6px;}
+    .product .products-quantify{font-size: 10px;}
+    .product-price{display: block;}
+    .product-price h2{font-size: 18px;}
+    .product-price h5{font-size: 12px;}
+    .product-price h5 s{font-size: 11px;}
+    .content5{
+        justify-content: space-between;
+        margin: 5px;
+    }
+    .content5 h1{font-size: 25px;}
+    .content5 h2{font-size: 20px;}
+    .content5 h5{
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+}
+@media screen and (max-width: 700px){
+    #pointer img{
+        width: 70%;
+    }
+    .product .products-quantify{display: none;}
+}
+@media screen and (max-width: 600px){
+    nav{background-color: blue;}
+    #home .content1 h1{font-size: 48px;}
+    #pointer{display: block;}
+    .first-text{
+        background-color: #78759ae0;
+        width: 100%;
+        position: absolute;
+        z-index: 9;
+        top: 150%;
+    }
+    #pointer img{
+        background-color: #78759a;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #pointer h2{
+        margin: 20px;
+    }
+    .content2-1 img{
+        margin-right: 10px;
+        width: 55%;
+    }
+    .content2-1 h2{margin-top: 35%;}
+    .boxes {
+        display: block;
+        margin: 50px;
+        justify-content: center;
+    }
+    .box{margin-top: 10px;}
+    .background4{
+        width: 14em;
+        height: 14em;
+    }
+    .background5{margin-top: 50em;}
+    .background6{
+        left: 55%;
+        margin-top: 120em;
+    }
+    .background7{margin-top: 160em;}
+    .cards{
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translate(-40%);
+    }
+    .cards2, .cards3, .cards4{display: none;}
+    .card{width: 70%;}
+    .product h3{
+        justify-content: space-between;
+        font-size: 38px;
+        margin-left: 15px;
+    }
+    #heart{
+        display: flex;
+        margin-right: 15px;
+        font-size: 34px;
+    }
+    #heart:hover{margin-right: 15px;}
+    .product .star-icons{margin-left: 13px;}
+    .product-price{display: flex;}
+    .product-price-past{display: flex;}
+    .product-price h2{
+        margin-left: 15px;
+        font-size: 30px;
+    }
+    .product-price h5{font-size: 20px;}
+    .product-price h5 s{font-size: 18px;}
+    .button-line{
+        margin-top: 50px;
+    }
+    footer{
+        margin-top: 9em;
+    }
+    .content5{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    }
+    .content5-1, .content5-2{display: block;}
+    .content5-3, .content5-4{display: none;}
 }

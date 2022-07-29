@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color: #78759ac4;
+        }
+        #heart{
+            color: gray;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        #heart:hover{
+            transition: 0.5s;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    
+    <i id="heart" class="hearts">&#x2764;</i>
+
+<script>
+
+
+    let cli =false
+    heart.addEventListener('click', clicar)
+
+function clicar(){
+    const heart = document.getElementById('heart')
+    heart.style.color='red'
+}
+
+
+
+const likeBtn = document.querySelector('#heart')
+
+let clicked = false;
+
+likeBtn.addEventListener('click', () =>{
+    if(!clicked) {
+        clicked = true;
+        likeBtn.style.color='red'
+    } else{
+        clicked =false;
+        likeBtn.style.color='gray'
+    }
+})
+
+</script>
+
+</body>
+</html>

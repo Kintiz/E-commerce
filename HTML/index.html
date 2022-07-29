@@ -6,224 +6,753 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Barra</title>
-    <!--Bootstrap-->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- Fonte do Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@200&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
     <!--NavBar-->
-    <header id="sobreposicao">
+    <header>
         <nav>
             <div class="logo">
-                <h4>The Barra</h4>
+                <h1>
+                    <a href="index.html">The Barra</a>
+                </h1>
             </div>
-            <ul class="links">
+            <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html"><h5>Home</h5></a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#"><h5>About</h5></a>
                 </li>
                 <li>
-                    <a href="index2.html">Work</a>
+                    <a href="index2.html"><h5>Work</h5></a>
                 </li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#"><h5>Projects</h5></a>
                 </li>
             </ul>
-            <div class="carrinho">
-                <h4>Cart</h4>
+            <div class="cart">
+                <h1>
+                    <a href="#">
+                        <i class="bi bi-bag-check"></i>
+                    </a>  
+                </h1>
             </div>
         </nav>
     </header>
-    
     <!--Home page-->
     <main>
-        <selection id="home">
-            <div class="container">
-                <h3>
+        <section id="home">
+            <div class="content1" data-aos="fade-left" data-aos-duration="1000">
+                <h1>
                     Welcome to the <span class="jungle">Jungle</span><br>
                     Now let's live
-                </h3>
+                </h1>
                 <a href="#pointer"><button class="button">
                     Let's Go
                 </button></a>
             </div>
-            <span id="pointer">s</span>
-        </selection>
+        </section>
+
+        <section id="pointer">
+            <div class="first-text">
+                <h2 data-aos="fade-right" data-aos-duration="1000">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum suscipit veniam quo optio quas incidunt illo possimus
+                </h2>
+            </div>
+                <img src="../Imagens/aaa.png" alt="first-image">
+        </section>
+
+        <section id="pointer2">
+            <div class="content2">
+                <span class="background1"></span>
+                <span class="background2"></span>
+                <div class="content2-1">
+                    <img src="../Imagens/pngwing.com (6).png" alt="">
+                    <h2 data-aos="fade-left" data-aos-duration="1000">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, totam alias
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="middle">
+            <div class="tittle">
+                <h1>Lorem ipsum dolor</h1>
+                <h5>Lorem ipsum dolor sit </h5>
+            </div>
+            <div class="boxes">
+                <a href="#">
+                    <div class="box">
+                        <h1>Lorem ipsum </h1>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus expedita architecto cum perferendis</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="box">
+                        <h1>Lorem</h1>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae libero voluptate, non beatae itaque, cumque</h3>
+                    </div>
+                </a> 
+                <a href="#">
+                    <div class="box">
+                        <h1>Lorem ipsum dolor</h1>
+                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor nostrum, quod enim obcaecati a sapiente quo </h3>
+                    </div>
+                </a>
+            </div>   
+        </section>
+
         <!--Our Featured-->
-        <div id="our">
-            <div class="container">
-                <h3>Our Featured</h3>
-                <hr>
-                <p>Here you can check out our new products with fair price on Barra</p>
-            </div>
-        </div>
-        <!--Featured-->
-        <selection id="featured">
-            <!--Wallpaper montain-->
-            <div id="montanha">
-                <div class="mountaineering">
-                    <h2>
-                        Mountaineering
-                    </h2>
+        <section id="our-featured">
+            <div id="our" class="background3">
+                <div class="content3">
+                    <h1>Our Featured</h1>
+                    <span class="bar"></span>
+                    <h3>Here you can check out our new products with fair price on Barra</h3>
+                </div>
+            </div>   
+        </section>
+        
+        <section id="all-cards">
+            <div class="content4">
+                <div class="background4"></div>
+                <div class="background5"></div>
+                <div class="background6"></div>
+                <div class="background7"></div>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="3"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                    <div class="heart">
+                                        <i id="heart" class="hearts">&#x2764;</i>
+                                    </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards2">
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>  
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards3">
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards4">
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="../Imagens/capacetepng2.png" alt="">
+                        <div class="product">
+                            <h3>
+                                <a href="#">Helmet</a>
+                                <div class="heart">
+                                    <i id="heart" class="hearts">&#x2764;</i>
+                                </div>
+                            </h3>
+                            <div class="star">
+                                <div class="star-icons">
+                                    <star-rater data-rating="0"></star-rater>
+                                </div>
+                                <a href="" class="products-quantify">
+                                    (245)
+                                </a>
+                            </div>
+                            <div class="product-price">
+                                <h2>$14.99</h2>
+                                <div class="product-price-past">
+                                    <h5><s>$20</s></h5>
+                                    <h5>42% off</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-line">
+                    <a href="index2.html"><button class="button">See More -></button></a>
                 </div>
             </div>
-            <!--Product-->
-            <div class="product">
-                <div class="card" style="margin-left: -2%;">
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h2 class="card-text">Bonnet</h2>
-                    <h2>$92.00</h2>
-                    <hr>
-                        <!--Button-->
-                    <a href="#"><button class="cta">
-                        <span class="hover-underline-animation"> Shop now </span>
-                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                        </svg>
-                      </button></a>
-                    </div>
-                </div>
-                <!--Product-->
-                <div class="card" >
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-text">Rope</h2>
-                        <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                        <button class="cta">
-                            <span class="hover-underline-animation"> Shop now </span>
-                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                              <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                            </svg>
-                          </button>
-                    </div>
-                </div>
-                <!--Product-->
-                <div class="card" >
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-text">Brake</h2>
-                        <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                        <button class="cta">
-                            <span class="hover-underline-animation"> Shop now </span>
-                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                              <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                            </svg>
-                          </button>
-                    </div>
-                </div>  
-                <!--Product-->
-                <div class="card" style="margin-right: 6%;">
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-text">Helmet</h2>
-                        <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                        <button class="cta">
-                            <span class="hover-underline-animation"> Shop now </span>
-                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                              <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                            </svg>
-                          </button>
-                    </div>
-                </div>
-            </div>
-        </selection>
-        <selection id="featured">
-            <!--Wallpaper Skydiving-->
-            <div id="paraquedismo">
-                <div class="skydiving">
-                    <h2>
-                        skydiving
-                    </h2>
-                </div>
-            </div>
-            <!--Product-->
-            <div class="product">
-                <div class="card" style="margin-left: -2%; background-color: #3d6996;">
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h2 class="card-text">Rope</h2>
-                    <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                    <a href="#"><button class="cta">
-                        <span class="hover-underline-animation"> Shop now </span>
-                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                          <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                        </svg>
-                      </button></a>
-                    </div>
-                </div>
-                <!--Product-->
-                <div class="card" style="background-color: #3d6996;">
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-text">Rope</h2>
-                        <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                        <button class="cta">
-                            <span class="hover-underline-animation"> Shop now </span>
-                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                              <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                            </svg>
-                          </button>
-                    </div>
-                </div>
-                <!--Product-->
-                <div class="card"style="background-color: #3d6996;">
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-text">Rope</h2>
-                        <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                        <button class="cta">
-                            <span class="hover-underline-animation"> Shop now </span>
-                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                              <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                            </svg>
-                          </button>
-                    </div>
-                </div>  
-                <!--Product-->
-                <div class="card" style="margin-right: 6%;background-color: #3d6996;">
-                    <img src="../Imagens/toca.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h2 class="card-text">Rope</h2>
-                        <h2>$92.00</h2>
-                        <hr>
-                        <!--Button-->
-                        <button class="cta">
-                            <span class="hover-underline-animation"> Shop now </span>
-                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
-                              <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
-                            </svg>
-                          </button>
-                    </div>
-                </div>
-            </div>
-        </selection>
+        </section>
+        
     </main>
 
+    <footer>
+        <section id="footer">
+            <div class="content5">
+                <div class="content5-1">
+                    <a href="index.html">
+                        <h1>BARRA</h1>
+                    </a>
+                    <a href="#">
+                        <h5>Lorem, ipsum dolor sit</h5>
+                    </a>
+                    <h2 style="margin-top: 30px;">
+                        NSEI
+                    </h2>
+                    <a href="#">
+                        <h5>Lorem, ipsum dolor sit</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Lorem, ipsum dolor sit</h5>
+                    </a>
+                </div>
+                <div class="content5-2">
+                    <h2>NSEI</h2>
+                    <a href="#">
+                        <h5>Lorem ipsum dolor sit</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Lorem ipsum dolor</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Lorem ipsum dolor sit</h5>
+                    </a>
+                </div>
+                <div class="content5-3">
+                    <h2>NSEI</h2>
+                    <a href="#">
+                        <h5>Lorem ipsum</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Lorem ipsum dolor sit</h5>
+                    </a>
+                </div>
+                <div class="content5-4">
+                    <h2>NSEI</h2>
+                    <a href="#">
+                        <h5>Lorem ipsum dolor</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Lorem ipsum dolor sit</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Lorem ipsum</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Lorem ipsum dolor sit</h5>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="icons">
+                <a href="#">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+                <h6>@Copyright The Barra Oficial</h6>
+        </section>
+        
+
+    </footer>
+
     <!--Script-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+    <script src="../JS/stars.js"></script>
+    <script src="../JS/heart.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
